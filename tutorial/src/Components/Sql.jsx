@@ -1,5 +1,5 @@
 import React from "react";
-import sqlimg from "./assets/sql.jpg";
+import sqlimg from "../assets/sql.jpg";
 
 const Sql = () => {
   return (

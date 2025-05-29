@@ -1,5 +1,5 @@
 import React from "react";
-import pythonimg from "./assets/python.jpg";
+import pythonimg from "../assets/python.jpg";
 
 const Python = () => {
   return (
