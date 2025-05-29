@@ -1,0 +1,135 @@
+.programming-language {
+  min-height: calc(100vh - 64px);
+  padding: var(--spacing-xl) 0;
+}
+
+.language-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.language-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+.language-description {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.topic-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.topic-header {
+  padding: var(--spacing-lg);
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+}
+
+.topic-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.topic-description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.topic-content {
+  padding: var(--spacing-lg);
+}
+
+.topic-list {
+  list-style: none;
+}
+
+.topic-item {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.topic-item:last-child {
+  border-bottom: none;
+}
+
+.topic-link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: color 0.2s ease;
+}
+
+.topic-link:hover {
+  color: var(--primary-color);
+}
+
+.topic-icon {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+/* Code Block Styles */
+.code-block {
+  background: #1e1e1e;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d4d4d4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .language-title {
+    font-size: 2rem;
+  }
+
+  .language-description {
+    font-size: 1rem;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+} 
